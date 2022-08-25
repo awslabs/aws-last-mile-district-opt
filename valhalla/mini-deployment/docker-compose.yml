@@ -1,0 +1,26 @@
+version: '3.0'
+services:
+  valhalla:
+    image: gisops/valhalla:latest
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./custom_files/:/custom_files
+    environment:
+      # The tile_file must be located in the `custom_files` folder.
+      # The tile_file has priority and is used when valid.
+      # If the tile_file doesn't exist, the url is used instead.
+      # Don't blank out tile_url when you use tile_file and vice versa.
+      - tile_urls=https://download.geofabrik.de/australia-oceania/australia-latest.osm.pbf
+      # Use greater sydney boundary from: https://data.aurin.org.au/dataset/geoscape-gsyd-geoscape-buildings-gsyd-2020-na
+      - min_x=150.08
+      - min_y=-34.33
+      - max_x=151.62
+      - max_y=-33.0
+      - use_tiles_ignore_pbf=True
+      - force_rebuild=False
+      - force_rebuild_elevation=False
+      - build_elevation=True
+      - build_admins=True
+      - build_time_zones=True
+  
