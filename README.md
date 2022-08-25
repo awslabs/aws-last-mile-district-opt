@@ -38,10 +38,10 @@ python 07_evaluate.py
 ```
 
 ## License
-
 This project is licensed under the Apache-2.0 License.
 
 ## Acknowledgements
 * https://github.com/kw/metis-python (MIT License)
 * https://github.com/KarypisLab/METIS (Apache-2.0 License)
 * https://github.com/google/or-tools (Apache-2.0 License)
+* https://github.com/valhalla/valhalla (MIT License)
