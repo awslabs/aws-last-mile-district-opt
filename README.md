@@ -2,6 +2,8 @@
 
 This repository demonstrates our solution to the district optimization problem for package allocation and [last mile planning](https://en.wikipedia.org/wiki/Last_mile_(transportation)). In our approach, we assemble basic geographic units, such as streets, post code areas, suburbs, into larger geographic districts known as **polygons**, in order to achieve some optimisation objectives or planning criteria. Packages are automatically allocated to different polygons based on the spatial matching between their addresses and the [geo-fence](https://en.wikipedia.org/wiki/Geo-fence) of the established polygons. Our solution runs on SageMaker notebook instances.
 
+Please check out our blog post [**Aramex Australia makes delivery easier for drivers using open source solutions from Amazon**](https://medium.com/@chenwuperth/aramex-australia-makes-delivery-easier-for-drivers-using-open-source-solutions-from-amazon-12075f278dbf) for technical details.
+
 ![](districting.png)
 
 ## Installation
